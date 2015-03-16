@@ -21,9 +21,11 @@
 @implementation ViewController
 
 - (void)pickImageButtonTapped:(UIButton*)button {
-//  UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-//  imagePickerController.delegate = self;
+//  Normal View Controller
+  UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+  imagePickerController.delegate = self;
 
+//  UIImagePickerController subclass with two blocks
 //  ImagePickerWithTwoBlockController *imagePickerController = [[ImagePickerWithTwoBlockController alloc] init];
 //  [imagePickerController pickImageWithSuccess:^(UIImagePickerController *picker, NSDictionary *info) {
 //    self.imageView.image = info[UIImagePickerControllerOriginalImage];
@@ -31,26 +33,29 @@
 //  } cancel:^(UIImagePickerController *picker) {
 //    [self dismissViewControllerAnimated:YES completion:nil];
 //  }];
-//
-//
+
+//  UIImagePickerController subclass with one blocks
 //  ImagePickerWithOneBlockController *imagePickerController = [[ImagePickerWithOneBlockController alloc] init];
 //  [imagePickerController pickImage:^(UIImagePickerController *picker, NSDictionary *info) {
 //    self.imageView.image = info[UIImagePickerControllerOriginalImage];
 //    [self dismissViewControllerAnimated:YES completion:nil];
 //  }];
-////
+
+//  UIImagePickerController subclass with one block which returns a UIImage
 //  ImagePickerWithOneBlockReturnsImageController *imagePickerController = [[ImagePickerWithOneBlockReturnsImageController alloc] init];
 //  [imagePickerController pickImage:^(UIImage *image) {
 //    self.imageView.image = image;
 //    [self dismissViewControllerAnimated:YES completion:nil];
 //  }];
-  UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-  [imagePickerController pickImage:^(UIImage *image) {
-    self.imageView.image = image;
-    [self dismissViewControllerAnimated:YES completion:nil];
-  }];
 
-//
+//  UIImagePickerController with one block which returns a UIImage
+//  UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+//  [imagePickerController pickImage:^(UIImage *image) {
+//    self.imageView.image = image;
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//  }];
+
+//  ImagePickerWrapper with one block which returns a UIImage
 //  UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
 //  self.pickerObserver = [ImagePickerWrapper picker:imagePickerController completion:^(UIImage *image) {
 //    self.imageView.image = image;
@@ -58,7 +63,7 @@
 //    [self dismissViewControllerAnimated:YES completion:nil];
 //  }];
 
-//
+//  ImagePickerWrapper as singleton with one block which returns a UIImage
 //  UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
 //  [ImagePickerWrapperSingleton picker:imagePickerController completion:^(UIImage *image) {
 //    self.imageView.image = image;
@@ -77,6 +82,7 @@
 }
 
 - (void)resetButtonTapped:(UIButton *)button {
+  // Poor man's check of making sure I don't leak this View controller.
   UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
   window.rootViewController = nil;
 }
