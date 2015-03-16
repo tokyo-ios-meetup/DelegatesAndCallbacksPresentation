@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
-
+- (IBAction)pickImageButtonTapped:(UIButton*)button;
+- (IBAction)resetButtonTapped:(UIButton*)button;
 @end
 

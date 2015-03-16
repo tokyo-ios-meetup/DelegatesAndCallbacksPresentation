@@ -14,6 +14,12 @@
 		C989CBB21AB26AA300F1FD3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C989CBB11AB26AA300F1FD3A /* Images.xcassets */; };
 		C989CBB51AB26AA300F1FD3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C989CBB31AB26AA300F1FD3A /* LaunchScreen.xib */; };
 		C989CBC11AB26AA400F1FD3A /* DelegateAndCallbacksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C989CBC01AB26AA400F1FD3A /* DelegateAndCallbacksTests.m */; };
+		C989CBCC1AB27A9E00F1FD3A /* ImagePickerWithTwoBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = C989CBCB1AB27A9E00F1FD3A /* ImagePickerWithTwoBlockController.m */; };
+		C989CBCF1AB2D05600F1FD3A /* ImagePickerWithOneBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = C989CBCE1AB2D05600F1FD3A /* ImagePickerWithOneBlockController.m */; };
+		C989CBD21AB2DB6D00F1FD3A /* ImagePickerWithOneBlockReturnsImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C989CBD11AB2DB6D00F1FD3A /* ImagePickerWithOneBlockReturnsImageController.m */; };
+		C989CBD81AB2EC0200F1FD3A /* ImagePickerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C989CBD71AB2EC0200F1FD3A /* ImagePickerWrapper.m */; };
+		C989CBDB1AB2F2FB00F1FD3A /* ImagePickerWrapperSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = C989CBDA1AB2F2FB00F1FD3A /* ImagePickerWrapperSingleton.m */; };
+		F4C225CE1AB3C18B0066B390 /* UIImagePicker+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C225CD1AB3C18B0066B390 /* UIImagePicker+Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,18 @@
 		C989CBBA1AB26AA400F1FD3A /* DelegateAndCallbacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegateAndCallbacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C989CBBF1AB26AA400F1FD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C989CBC01AB26AA400F1FD3A /* DelegateAndCallbacksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateAndCallbacksTests.m; sourceTree = "<group>"; };
+		C989CBCA1AB27A9E00F1FD3A /* ImagePickerWithTwoBlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerWithTwoBlockController.h; sourceTree = "<group>"; };
+		C989CBCB1AB27A9E00F1FD3A /* ImagePickerWithTwoBlockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerWithTwoBlockController.m; sourceTree = "<group>"; };
+		C989CBCD1AB2D04A00F1FD3A /* ImagePickerWithOneBlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerWithOneBlockController.h; sourceTree = "<group>"; };
+		C989CBCE1AB2D05600F1FD3A /* ImagePickerWithOneBlockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerWithOneBlockController.m; sourceTree = "<group>"; };
+		C989CBD01AB2DB5600F1FD3A /* ImagePickerWithOneBlockReturnsImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerWithOneBlockReturnsImageController.h; sourceTree = "<group>"; };
+		C989CBD11AB2DB6D00F1FD3A /* ImagePickerWithOneBlockReturnsImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerWithOneBlockReturnsImageController.m; sourceTree = "<group>"; };
+		C989CBD61AB2EC0200F1FD3A /* ImagePickerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerWrapper.h; sourceTree = "<group>"; };
+		C989CBD71AB2EC0200F1FD3A /* ImagePickerWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerWrapper.m; sourceTree = "<group>"; };
+		C989CBD91AB2F2EB00F1FD3A /* ImagePickerWrapperSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerWrapperSingleton.h; sourceTree = "<group>"; };
+		C989CBDA1AB2F2FB00F1FD3A /* ImagePickerWrapperSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerWrapperSingleton.m; sourceTree = "<group>"; };
+		F4C225CC1AB3C1600066B390 /* UIImagePicker+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePicker+Block.h"; sourceTree = "<group>"; };
+		F4C225CD1AB3C18B0066B390 /* UIImagePicker+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePicker+Block.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +103,18 @@
 				C989CBA91AB26AA300F1FD3A /* AppDelegate.m */,
 				C989CBAB1AB26AA300F1FD3A /* ViewController.h */,
 				C989CBAC1AB26AA300F1FD3A /* ViewController.m */,
+				C989CBCA1AB27A9E00F1FD3A /* ImagePickerWithTwoBlockController.h */,
+				C989CBCB1AB27A9E00F1FD3A /* ImagePickerWithTwoBlockController.m */,
+				C989CBCD1AB2D04A00F1FD3A /* ImagePickerWithOneBlockController.h */,
+				C989CBCE1AB2D05600F1FD3A /* ImagePickerWithOneBlockController.m */,
+				C989CBD01AB2DB5600F1FD3A /* ImagePickerWithOneBlockReturnsImageController.h */,
+				C989CBD11AB2DB6D00F1FD3A /* ImagePickerWithOneBlockReturnsImageController.m */,
+				F4C225CC1AB3C1600066B390 /* UIImagePicker+Block.h */,
+				F4C225CD1AB3C18B0066B390 /* UIImagePicker+Block.m */,
+				C989CBD61AB2EC0200F1FD3A /* ImagePickerWrapper.h */,
+				C989CBD71AB2EC0200F1FD3A /* ImagePickerWrapper.m */,
+				C989CBD91AB2F2EB00F1FD3A /* ImagePickerWrapperSingleton.h */,
+				C989CBDA1AB2F2FB00F1FD3A /* ImagePickerWrapperSingleton.m */,
 				C989CBAE1AB26AA300F1FD3A /* Main.storyboard */,
 				C989CBB11AB26AA300F1FD3A /* Images.xcassets */,
 				C989CBB31AB26AA300F1FD3A /* LaunchScreen.xib */,
@@ -219,9 +249,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C989CBD81AB2EC0200F1FD3A /* ImagePickerWrapper.m in Sources */,
+				C989CBD21AB2DB6D00F1FD3A /* ImagePickerWithOneBlockReturnsImageController.m in Sources */,
 				C989CBAD1AB26AA300F1FD3A /* ViewController.m in Sources */,
 				C989CBAA1AB26AA300F1FD3A /* AppDelegate.m in Sources */,
+				C989CBDB1AB2F2FB00F1FD3A /* ImagePickerWrapperSingleton.m in Sources */,
+				C989CBCF1AB2D05600F1FD3A /* ImagePickerWithOneBlockController.m in Sources */,
 				C989CBA71AB26AA300F1FD3A /* main.m in Sources */,
+				F4C225CE1AB3C18B0066B390 /* UIImagePicker+Block.m in Sources */,
+				C989CBCC1AB27A9E00F1FD3A /* ImagePickerWithTwoBlockController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +450,7 @@
 				C989CBC61AB26AA400F1FD3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C989CBC71AB26AA400F1FD3A /* Build configuration list for PBXNativeTarget "DelegateAndCallbacksTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +459,7 @@
 				C989CBC91AB26AA400F1FD3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
