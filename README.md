@@ -6,10 +6,6 @@
 
 ---
 
-![](/Users/home/Desktop/Screen Shot 2015-03-14 at 9.45.11 AM.png)
-
----
-
 ```obj-c
 {
   ...
@@ -28,10 +24,6 @@
 }
 
 ```
----
-
-![title](file:///Users/home/Desktop/Screen%20Shot%202015-03-14%20at%209.47.27%20AM.png)
-
 ---
 
 # One purpose that the delegates were used for was callbacks.
@@ -349,8 +341,6 @@ UIAlertAction *okAction = [UIAlertAction
     [self dismissViewControllerAnimated:YES completion:nil];
   }];
 ```
----
-![](/Users/home/Desktop/Screen Shot 2015-03-14 at 10.33.00 AM.png)
 
 ---
 ```obj-c
